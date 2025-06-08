@@ -8,13 +8,19 @@
     <link href="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
+
     <header>
         <div class="LOGO">
-            <img src="LOGO.JPG" alt="THE MAGIC OF CARE"> 
-            <h1><i>THE MAGIC OF CARE</i></h1>
+          <img src="LOGO.JPG" alt="THE MAGIC OF CARE"> 
+          <h1><i>THE MAGIC OF CARE</i></h1>
          </div>
-        <nav>
+
+  <!-- Botón de menú para pantallas pequeñas -->
+  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        
+         <nav>
             <ul>
                <li><i><a href="#introduccion">Inicio</i></a></li>
                 <li><i><a href="#cuidado-de-la-basura">Cuidado de la basura</i></a></li>
@@ -200,6 +206,13 @@
         contactForm.reset();
       });
     });
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  toggleBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
   </script>
 </body>
 </html>

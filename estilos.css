@@ -59,6 +59,48 @@ header {
     padding: 10px 10px;
 }
 
+/* Estilo del botón de menú */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: var(--verde-oscuro);
+    padding: 10px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .LOGO img {
+    width: 80px;
+  }
+
+  .LOGO h1 {
+    font-size: 1.2em;
+  }
+}
+
 .LOGO {
     display: flex;
     align-items: center;
