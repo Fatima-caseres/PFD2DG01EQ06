@@ -63,11 +63,13 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .LOGO img {
     width: 120px;
-    height: 120px;
+    height: auto; /* Auto para que mantenga proporción */
 }
 
 .logo h1 {
