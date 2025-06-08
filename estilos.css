@@ -64,11 +64,11 @@ header {
     align-items: center;
     gap: 10px;
     max-width: 100%;
-    height: auto;
+    height: 100%; /* Ajustar ancho para móviles y tabletas */
 }
 
 .LOGO img {
-    width: 120px;
+    width: 120px; /* Altura de imagen más pequeña en móviles y tabletas */
     height: auto; /* Auto para que mantenga proporción */
 }
 
