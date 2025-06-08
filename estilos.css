@@ -92,16 +92,16 @@ header {
     margin: 10px 0;
   }
 
-  .LOGO img {
+  .logo img {
     width: 80px;
   }
 
-  .LOGO h1 {
+  .logo h1 {
     font-size: 1.2em;
   }
 }
 
-.LOGO {
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -109,7 +109,7 @@ header {
     height: 100%; /* Ajustar ancho para móviles y tabletas */
 }
 
-.LOGO img {
+.logo img {
     width: 120px; /* Altura de imagen más pequeña en móviles y tabletas */
     height: auto; /* Auto para que mantenga proporción */
 }
